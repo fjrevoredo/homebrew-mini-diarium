@@ -11,6 +11,16 @@ cask "mini-diarium" do
 
   app "Mini Diarium.app"
 
+  caveats <<~EOS
+    Mini Diarium is not code-signed. On first launch, macOS Gatekeeper
+    may show a "damaged and can't be opened" error.
+
+    To fix this, run the following command in Terminal:
+      xattr -cr "/Applications/Mini Diarium.app"
+
+    Then open the app normally.
+  EOS
+
   zap trash: [
     "~/Library/Application Support/Mini Diarium",
     "~/Library/Preferences/com.mini-diarium.plist",
