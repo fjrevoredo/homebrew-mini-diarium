@@ -1,6 +1,6 @@
 cask "mini-diarium" do
-  version "0.7.4"
-  sha256 "971cbd9c0103bed8e3409004bfcf06fa4da05ca0311c45fdfd28ef8bdc4d524f"
+  version "0.7.5"
+  sha256 "1abbbb5412bdfe0da185b7160298abd2b2ffbe7799c6151e0c075de879b0efd0"
 
   url "https://github.com/fjrevoredo/mini-diarium/releases/download/v#{version}/Mini-Diarium-#{version}-macos.dmg",
       verified: "github.com/fjrevoredo/mini-diarium/"
