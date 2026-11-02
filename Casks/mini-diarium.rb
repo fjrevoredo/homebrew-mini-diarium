@@ -1,22 +1,22 @@
 cask "mini-diarium" do
-  version "0.7.6"
-  sha256 "6d9b41ca3eb68096bebcc62c0004535e71d3c57d4b7e5f282fce1e3d6eecde44"
+  version "0.8.0"
+  sha256 "ed3c4e645de3d0e69aebdbfa79091a0887be9deaf138717cbae2f8e959911663"
 
   url "https://github.com/fjrevoredo/mini-diarium/releases/download/v#{version}/Mini-Diarium-#{version}-macos.dmg",
       verified: "github.com/fjrevoredo/mini-diarium/"
 
-  name "Mini Diarium"
+  name "Fenmark"
   desc "Encrypted, local-first journaling app"
-  homepage "https://mini-diarium.com"
+  homepage "https://fenmark.app"
 
-  app "Mini Diarium.app"
+  app "Fenmark.app"
 
   caveats <<~EOS
-    Mini Diarium is not code-signed. On first launch, macOS Gatekeeper
+    Fenmark is not code-signed. On first launch, macOS Gatekeeper
     may show a "damaged and can't be opened" error.
 
     To fix this, run the following command in Terminal:
-      xattr -cr "/Applications/Mini Diarium.app"
+      xattr -cr "/Applications/Fenmark.app"
 
     Then open the app normally.
   EOS
